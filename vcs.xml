@@ -26,6 +26,10 @@
           <option name="url" value="https://github.com/c-coffee/douban_demo.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/c-coffee/lims.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\zhangjunbo\Desktop\" />
