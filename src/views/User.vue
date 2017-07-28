@@ -136,7 +136,7 @@
                 </el-pagination>
             </div>
             <el-table
-                    :data="tableData"
+                    :data="userData"
                     border
                     style="width: 100%">
                 <el-table-column width="70" prop="id" label="序号"></el-table-column>
@@ -191,6 +191,10 @@ export default{
             dlg_isUploadSignDlg:false,
             dlg_isDeleteUserDlg:false,
 
+            //表格显示数据
+            page_size:10,
+            current_page:1,
+
             dlg_modelCloseOption:false,
             dlg_labelPosition:'right',
             addUserForm:{
@@ -228,7 +232,7 @@ export default{
                     {required:true,message:'请选择所属部门',trigger:'change'}
                 ]
             },
-            tableData:[
+            userData:[
                 {
                     id:1,
                     name:'张三',
@@ -317,6 +321,9 @@ export default{
         }
     },
     methods:{
+        getUser(){
+
+        },
         addUser(){
             this.$refs['addUserForm'].validate(function(valid){
                 if(valid){
