@@ -191,6 +191,9 @@ export default{
             dlg_isUploadSignDlg:false,
             dlg_isDeleteUserDlg:false,
 
+            //页面初始数据
+            deptInfo:[], //部门：下拉选项  created 时初始化
+
             //表格显示数据
             page_size:10,
             current_page:1,
@@ -346,7 +349,15 @@ export default{
         }
     },
     created:function(){
-
+        console.log('aaaa');
+        //获取dept信息
+        this.$ajax.get('http://localhost:3333/base/getDeptList')
+            .then(function(res){
+                console.log(res);
+            })
+            .catch(function(err){
+                console.log(err);
+            })
     }
 }
 </script>
