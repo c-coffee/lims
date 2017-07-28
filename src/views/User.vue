@@ -344,6 +344,9 @@ export default{
                 }
             }.bind(this));
         }
+    },
+    created:function(){
+
     }
 }
 </script>
