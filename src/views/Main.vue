@@ -8,9 +8,10 @@
             <vSideBar class="el-sidebar" ></vSideBar>
         </div>
         <div class="right-column">
-            <router-view class="mainboard"></router-view>
+            <div class="mainboard">
+                <router-view></router-view>
+            </div>
         </div>
-
     </div>
 </template>
 <script>
@@ -29,7 +30,7 @@ export default{
     body{
         height:100%;
         width:100%;
-        background-color:#2396EB
+        background-color:#58B7FF;
     }
     .left-column{
         width:260px;
@@ -39,7 +40,6 @@ export default{
     .right-column{
         float:left;
         width:99%;
-        margin:0 10px;
     }
     .el-sidebar{
         background:#324157;
@@ -50,6 +50,6 @@ export default{
     }
     .mainboard{
         margin:10px;
-        margin-left:268px;
+        margin-left:277px;
     }
 </style>

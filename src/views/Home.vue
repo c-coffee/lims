@@ -16,7 +16,7 @@
         </div>
         <div>
             <el-row>
-                <el-col span="16" >
+                <el-col :span="16" >
                     <el-card style="height:350px; margin-right:10px;">
                         <div slot="header" class="clearfix">
                             <span style="line-height: 36px;"><i class="el-icon-time"></i> 全所任务情况</span>
@@ -33,7 +33,7 @@
                         </div>
                     </el-card>
                 </el-col>
-                <el-col span="8">
+                <el-col :span="8">
                     <el-card style="height:350px;">
                         <div slot="header" class="clearfix">
                             <span style="line-height: 36px;"><i class="el-icon-time"></i> 个人任务</span>
